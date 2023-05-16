@@ -1,0 +1,88 @@
+body{
+    background-image: linear-gradient(to right, rgb(59, 21, 124), rgb(32, 209, 188));
+
+}
+
+  .formulario{
+      margin-top: 150px;
+      padding: 3px;
+  }
+
+  h1{
+      text-align: center;  
+      color: rgb(232, 229, 222);
+      font-size: 40px;
+  }
+
+  input[type="email"],input[type="password"]{
+    margin-top: 10px;
+      font-size: 20px;
+      width: 82%;
+      padding: 10px;
+      border-radius: 20px;
+      border-color: black;
+     
+      
+      
+     
+  }
+
+
+  button{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .button:hover{
+      background: blue;
+  }
+
+  p{
+      text-align: center;
+      font-family:Prototype ;
+      color: darkgoldenrod;
+      src: url(tipografias/Prototype.ttf);
+  }
+
+  .link{
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+  }
+
+  .link:hover{
+      color: red;
+  }
+  @media(min-width:768px)
+  {
+      .formulario{
+          margin: auto;
+          width: 500px;
+          margin-top: 150px;
+          border-radius: 2%;
+      }
+  }
+
+  .formulario .avatar{
+      width: 200px; 
+      height: 200px;
+      border-radius: 30%;
+      position: absolute;
+      top: 5px;
+      left: 560px;
+  }
+
+  .logo{
+    position: absolute;
+    margin-left: -810px;
+    margin-top: 80px;
+  }
+
+
+  

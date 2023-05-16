@@ -1,0 +1,475 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{ 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{ font-size: 1.25em;}
+
+.boton1{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 50px 45px;
+    border-radius: 12px;
+    border: 1.2px solid rgb(17, 17, 15);
+    box-shadow: 1.5px 1.5px 10px rgb(27, 29, 28);
+    color: white;
+    background-color: rgb(140, 61, 215);
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 50px 45px;
+    border-radius: 12px;
+    border: 1.2px solid rgb(17, 17, 15);
+    box-shadow: 1.5px 1.5px 10px rgb(27, 29, 28);
+    color: white;
+    background-color: rgb(140, 61, 215);
+}
+.boton1:hover{
+    background-color: rgb(83, 23, 83);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(140, 61, 215) ;}
+
+header{
+    background-color: rgb(58, 16, 97);
+}
+header .logo{
+    margin: 0;
+    padding: 45px 33px;
+    font-weight: bold;
+    color:rgb(139, 225, 196);
+    font-size: 1.5rem;
+  
+}
+/*
+header .buscador button{
+    
+    
+    margin-top: 20px;
+    margin-right: 16px;
+    background: rgb(195, 191, 196);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+
+header .buscador button:hover {
+background: rgb(94, 40, 92);
+
+}
+
+
+
+header .input[type=text], header .buscador button{
+    
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+
+}
+*/
+
+
+header .sesion{
+    padding: 5px;
+    margin: 0px 800px 0 1100px;
+}
+header .sesion img{
+    display: flex;
+    position: absolute;
+    align-content: center;
+    margin-left: 100px;
+    margin-top: 140px;
+    }
+
+header .result {
+    position: absolute;
+    z-index: 1;
+   width: 200px;
+   padding: 5px;
+    margin: 0px 800px 0 915px;
+    
+    
+}
+header .list-group-item {
+color: black;
+     
+ }
+    
+
+header .input[type=text]{
+border: 1px solid rgb(23, 23, 21);
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("media/logo.png") ;
+    background-repeat: no-repeat;
+    background-size: 120px;
+   background-position: 20dvh;
+   background-position-y: top ;
+}
+
+header nav{
+    display: block;
+    text-align: center;
+    flex-direction: unset;
+    padding-bottom: 5px;
+    
+}
+
+header a{
+    padding: 5px 12px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(223, 219, 219);
+}
+
+header a:hover{
+    color: rgb(55, 159, 147);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(225, 220, 220);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/index.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: aliceblue;
+}
+
+#SER{
+
+}
+
+#SER .container{
+    text-align: center;
+    padding: 200px 12px;
+    
+}
+
+#noticias{
+    background-image: linear-gradient(to right, rgb(80, 8, 96) , rgb(4, 232, 213));
+    color: white;
+    text-align: center;
+    
+}
+
+#noticias .container{
+ padding: 100px 50px;
+}
+
+#noticias h3{
+    margin-top: auto;
+    
+}
+#noticias h2{
+    margin-top: 0;
+}
+#noticias p{
+    display: none;
+}
+
+#noticias .not{
+    background-size: cover;
+    background-position: center center;
+    padding: 300px 0px;
+    margin: 15px;
+    border-radius: 20px;
+    
+}
+
+.not:nth-child(2):hover::after{
+    transform: translateY(0);
+    transform: translateX(0);
+   
+}
+.not:nth-child(2):hover::before{
+ content: "Nuestra Historia";
+ font-size: 3rem;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: rgb(231, 247, 220);
+}
+.not:nth-child(2)::after{
+    content:"Nuestra historia comienza a partir de un sueño, ayudar a los que más los necesitan, iniciamos nuestro camino en el 2017 de la mano de el ingeniero Luis Fernando Sanchez Aleman";
+    font-size: 2rem;
+    color: rgb(243, 238, 238);
+   
+    position:relative;
+    inset:inherit;
+    display: block;
+    place-items: center;
+    transform: translateY(100%);
+    transform: translateX(100%);
+    transition: transform .3s;
+}
+
+
+.not:nth-child(3):hover::after{
+    transform: translateY(0);
+    transform: translateX(0);
+   
+}
+.not:nth-child(3):hover::before{
+    content: "Luis Fernando Sánchez Alemán";
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgb(231, 247, 220);
+   }
+
+.not:nth-child(3)::after{
+    content:"Joven filantropo egresado del Instituto Tecnologico de Morelia de la Carrera: Ingenieria en Gestion Empresarial, con gusto por los deportes y la musica ";
+    font-size: 2rem;
+    color: rgb(243, 238, 238);
+    position:relative;
+    inset:inherit;
+    display: block;
+    place-items: center;
+    transform: translateY(100%);
+    transform: translateX(100%);
+    transition: transform .3s;
+}
+
+.not:nth-child(4):hover::after{
+    transform: translateY(0);
+    transform: translateX(0);
+   
+}
+.not:nth-child(4):hover::before{
+    content: "Nuestra Ciudad, Nuestra Ubicación";
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgb(231, 247, 220);
+   }
+.not:nth-child(4)::after{
+    content:"Morelia es la capital del estado de Michoacán, en la zona central de México. Las calles estrechas del centro de la ciudad colonial están rodeadas de edificios bien conservados del siglo XVII y XVIII, construidos con la piedra rosa característica de la región. Uno de esos edificios es la imponente Catedral de Morelia, de estilo barroco. Sus altísimas y elegantes torres gemelas dominan la plaza central de la ciudad, la Plaza de Armas. ";
+    font-size: 2rem;
+    color: rgb(243, 238, 238);
+    position:relative;
+    inset:0;
+    display: block;
+    place-items:center;
+    transform: translateY(100%);
+    transform: translateX(100%);
+    transition: transform .3s;
+}
+
+.not:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/tienda.jpg");
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.not:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/lo.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+.not:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/7.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.not:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/ubi.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+#caracteristicas {
+    margin: 40px 0 40px 0;
+    padding: 150px 80px;
+    background-image: url("media/6.jpg");
+    background-repeat: no-repeat;
+    background-size: 580px 420px;
+    background-position: calc(1200vw - 800px) 90px;
+    background-color: rgb(59, 21, 124);
+    border-radius: 0%;
+}
+
+#caracteristicas .container{
+    text-align: initial;
+    font-size: 2em;
+    font-family: cursive;
+    color: aliceblue;
+}
+#caracteristicas .container h2{
+    font-size: 2.2em;
+    color: rgb(32, 209, 188);
+  
+}
+#caracteristicas ul{
+    margin-left: -100px;
+}
+
+@media (min-width:1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+    
+}
+
+/*Carrusel*/
+
+.slider-container {
+  
+    display: flex;
+    left: 50%;
+    width: 40%;
+    height: 80vh;
+    overflow-x: scroll;
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 40%;
+    object-fit: cover;
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-align: center;
+  }
+
+  #carru .container{
+    margin: 80%;
+    padding: 100px 1px;
+    max-width: 90%;
+}
+
+.pie{
+    width: 100%;
+    background-color:  rgb(59, 21, 124);
+}
+
+.pie .g1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie .g1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie .g1 .box figure img{
+    width: 250px;
+}
+
+.pie .g1 .box h2{
+    color: aliceblue;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.pie .g1 .box p{
+    color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+.pie .g1 .social a{
+display: inline-block;
+text-decoration: none;
+width: 45px;
+height: 45px;
+line-height: 45px;
+color: rgb(139, 225, 196);
+margin-right: 10px;
+background-color: rgb(58, 16, 97);
+text-align: center;
+transition: all 300ms ease;
+}
+
+.pie .g1 .social a:hover{
+    color: rgb(24, 254, 112);
+}
+
+.pie .g2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.pie .g2 small{
+    font-size: 17px;
+}
+@media screen and (max-width:800px){
+    .pie .g1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

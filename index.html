@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suenos Esperanzas Y Risas A.C</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/Proyecto/MostrarPublicacion.js"></script>
+
+    <!-- Carrusel -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/59d2d0879a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="sesion">
+            <a href="login.html"><img src="media/usuario.png" width="50" height="50"></a>
+
+        </div>
+        <div class="container">
+            <p class="logo">Sueños Esperanzas y Risas</p>
+        </div>
+
+
+
+        <nav>
+
+
+
+
+
+
+
+
+            <a href="publicacion.html">Crear Publicacion</a>
+            <a href="#SER">Quienes Somos</a>
+            <a href="#noticias">Destacados</a>
+            <a href="#caracteristicas">Enfoque</a>
+                <input oninput="main(this.value)" type="search" placeholder="Search..." />
+                <ul id="result-list" class="result">
+                    
+                </ul>
+        </nav>
+    </header>
+
+
+    <section id="hero">
+        <h1> Se Parte de la Comunidad <br>Y Transforma Vidas</h1>
+        <a href="https://www.paypal.com/mx/business/accept-payments"><button class="boton1">Unete Ya!</button></a>
+    </section>
+
+
+    <br>
+    <br>
+    <section id="carru">
+        <!--Carrusel-->
+        <div class="carrusel">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ul>
+
+                <!-- El deslizante -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <a href="indexU.html"> <img id="img1" src="media/log.png" alt="Slide 1"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img2" src="media/22.jpg" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img3" src="media/4.jpg" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img4" src="media/3.jpg" alt="Slide 4">
+                    </div>
+                </div>
+
+
+                <!-- izquierda y derecha controles -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <secttion id="SER">
+
+        <div class="container">
+            <div class="img-cont">
+                <h2>Somos <span class="color-acento"> Sueños Esperanzas y Risas</span></h2>
+                <p>Somos una asociación civil sin fines de lucro compuesta por jóvenes que quieren un cambio positivo.
+                Puedes ser parte de la comunidad de fundraising mas grande de Morelia.
+                </p>
+
+            </div>
+        </div>
+    </secttion>
+
+    <section id="noticias">
+        <div class="container">
+            <h1>Destacados</h1>
+            <div class="noti">
+                <div class="not">
+                    <h2>Nuestros Productos Aqui</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut vitae iusto provident, magnam quis,
+                        rerum consequatur blanditiis atque reprehenderit, cumque sapiente officia aspernatur obcaecati
+                        fugiat est nobis soluta architecto nostrum.</p>
+                    <button class="boton1" onclick="location.href='tienda.html'">Ver Tienda</button>
+                </div>
+                <div class="not">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut vitae iusto provident, magnam quis,
+                        rerum consequatur blanditiis atque reprehenderit, cumque sapiente officia aspernatur obcaecati
+                        fugiat est nobis soluta architecto nostrum.</p>
+
+                </div>
+                <div class="not">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut vitae iusto provident, magnam quis,
+                        rerum consequatur blanditiis atque reprehenderit, cumque sapiente officia aspernatur obcaecati
+                        fugiat est nobis soluta architecto nostrum.</p>
+
+                </div>
+                <div class="not">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut vitae iusto provident, magnam quis,
+                        rerum consequatur blanditiis atque reprehenderit, cumque sapiente officia aspernatur obcaecati
+                        fugiat est nobis soluta architecto nostrum.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <h2>Nuestro Enfoque</h2>
+                <li>Empresa Sin Fines de Lucro</li>
+                <li>Cuidado del Medio Ambiente</li>
+                <li>Actividades Beneficas</li>
+                <li>Seguimiento a Personas</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="pie">
+        <div class="g1">
+            <div class="box"> 
+                <figure>
+                    <a href="#"><img src="media/lodesc.jpg" alt="Logo SER"></a>
+                </figure>
+
+            </div>
+            <div class="box">
+                <h2>Ayudar es Amar</h2>
+                <p>Sumate al cambio para un mejor futuro</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS EN...</h2>
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100070818625819" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/ser.a.c/" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+<div class="g2">
+    <small>&copy; 2023 <b>SER</b> - Todos los Derechos Reservados.</small>
+
+</div>
+    </footer>
+
+</body>
+
+<script src="Carrusel.js"></script>
+
+
+</html>

@@ -1,0 +1,38 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Iniciar Sesion</title>
+	<link rel="stylesheet" href="log.css">
+    <link rel="shortcut icon" href="">
+</head>
+<body>
+
+    <form class="formulario"  action="login.php" method="POST" id="formulario">
+       <a href="index.html"> <img class="avatar"  src="media/logo.png" alt="Logo"></a>
+       <br>
+        <h1>Inicio de sesión</h1>
+
+        
+
+        <div class="contenedeor">
+            <em style="background-color: red;">Invalid Login</em>
+            <input type="email" name="usuario" id="correo" placeholder="Correo electrónico " required aria-required="tr
+            " data-missing-error="Campo obligatorio">
+           
+        <br>
+        <br>
+            <input type="password" name="clave" id="contraseña" placeholder="Contraseña">
+        <br>
+        <br>
+            <div class="buttom">
+            <center><button type="submit" id="boton" onclick="click()" >INICIAR SESIÓN</button></center>
+        </div>
+            <p>¿No tienes una cuenta? <a class="link" href="registrar.html">Registrate</a></p>
+        </div>
+    </form>
+</body>
+<script src="login.js "></script>
+
+</html>

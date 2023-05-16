@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+  <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="publicacion.php" id="publicacion" method="post" enctype="multipart/form-data">
+    <main>
+        <trix-editor autofocus class="trix-content" input="input"></trix-editor>
+        <details id="output">
+          <summary>Output</summary>
+          <textarea readonly id="input" name="texto"></textarea>
+        </details>
+      </main>   
+      <input type="text" name="titulo">
+      <input type="submit">
+      <input accept="image/*" name="fileToUpload" type='file' id="fileToUpload" />
+      <img id="blah" src="#" alt="your image" />
+    </form>
+    
+</body>
+
+<script src="prueba.js"  ></script>
+</html>
